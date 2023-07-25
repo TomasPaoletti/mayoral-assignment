@@ -1,0 +1,67 @@
+{
+    "clothes": [
+        {
+            "id": 1,
+            "name": "Polo con estampado de algodón sostenible para chico",
+            "img": "",
+            "price": 25.99,
+            "discount": true
+        },
+        {
+            "id": 2,
+            "name": "Polo con estampado de algodón sostenible para niño",
+            "img": "",
+            "price": 25.99,
+            "discount": true
+        },
+        {
+            "id": 3,
+            "name": "Polo con motivo estampado de algodón sostenible para chico",
+            "img": "",
+            "price": 23.99,
+            "discount": true
+        },
+        {
+            "id": 4,
+            "name": "Polo con estampado de algodón para chico",
+            "img": "",
+            "price": 23.99,
+            "discount": false
+        },
+        {
+            "id": 5,
+            "name": "Polo con cuello mao de algodón para chico",
+            "img": "",
+            "price": 25.99,
+            "discount": false
+        },
+        {
+            "id": 6,
+            "name": "Polo con estampado de algodón sostenible para niño",
+            "img": "",
+            "price": 25.99,
+            "discount": false
+        },
+        {
+            "id": 7,
+            "name": "Polo de algodón sostenible para chico",
+            "img": "",
+            "price": 25.99,
+            "discount": false
+        },
+        {
+            "id": 8,
+            "name": "Polo de manga corta en algodón sostenible para chico",
+            "img": "",
+            "price": 13.99,
+            "discount": true
+        },
+        {
+            "id": 9,
+            "name": "Polo tie dye con motivo estampado de algodón para chico",
+            "img": "",
+            "price": 25.99,
+            "discount": false
+        }
+    ]
+}

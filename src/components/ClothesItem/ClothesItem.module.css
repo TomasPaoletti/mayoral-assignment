@@ -1,0 +1,59 @@
+.card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    @media (min-width: 850px) {
+        width: calc(25% - 16px);
+    }
+
+    @media (max-width: 849px) {
+        width: calc(50% - 16px);
+    }
+
+    .item_image {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    }
+
+    .item_title {
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .item_price {
+        text-align: center;
+    }
+
+    .item_discount{
+        text-align: center;
+        text-decoration: line-through;
+    }
+
+    .item_price_discount {
+        text-align: center;
+        color: red;
+        font-size: 20px;
+    }
+
+    .container_button{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .item_button{
+        color:white;
+        background-color: rgb(1, 114, 234);
+        text-transform: uppercase;
+        border: none;
+        border-radius: 6px;
+        padding: 8px;
+        cursor: pointer;
+    }
+}

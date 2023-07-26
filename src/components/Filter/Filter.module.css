@@ -1,0 +1,27 @@
+.container_filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container_filter .input_filter{
+    margin-top: 16px;
+    width: 20%;
+}
+
+.order_price{
+    display: flex;
+    margin-left: auto;
+}
+
+@media (max-width: 850px) {
+    .container_filter{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .order_price{
+        margin-left: 0;
+        margin-top: 8px;
+    }
+}

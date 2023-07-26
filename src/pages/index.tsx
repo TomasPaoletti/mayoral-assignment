@@ -1,7 +1,9 @@
 import { NextPage } from "next";
-import { useEffect, useState } from "react";
+import Filter from "../components/Filter/Filter";
+import Clothes from "./Clothes/Clothes";
 
-interface ClothesItem {
+
+interface Clothe {
   id: number,
   name: string,
   img: string,
@@ -9,60 +11,45 @@ interface ClothesItem {
   discount: boolean
 }
 
+interface HomePageProps {
+  clothesData: Clothe[];
+}
 
-const HomePage: NextPage = () => {
-
-  const [clothes, setClothes] = useState<ClothesItem[]>([]);
-  const [loading, setLoading] = useState<boolean>(false)
-
-  const getClothes = async () => {
-
-    setLoading(true)
-    
-    try {
-
-      await new Promise((resolve) => setTimeout(resolve, 3000));
-      const response = await fetch("http://localhost:3001/clothes")
-      if (!response.ok) {
-
-        throw new Error("Response error")
-      }
-
-      const data = await response.json()
-      setClothes(data)
-    } catch (e) {
-      console.log(e)
-    } finally {
-      setLoading(false)
-    }
-  };
-
-  useEffect(() => {
-    getClothes();
-  }, []);
-
+const HomePage: NextPage<HomePageProps> = ({ clothesData }) => {
 
   return (
     <>
-      {loading ?
-        <div>
-          Cargando...
-        </div>
-        : <>
-          <div>
-            <p>Busqueda por texto</p>
-            <p>Flecha arriba</p>
-            <p>Flecha abajo</p>
-          </div>
-          <div>
-            {clothes.map(item =>{
-              return <ul>
-                <li key={item.id}>{item.name}</li>
-              </ul>
-            })}
-          </div>
-        </>}
-    </>);
+      <Filter />
+      <Clothes clothesData={clothesData} />
+    </>
+  )
 };
+
+export async function getServerSideProps() {
+  try {
+
+    await new Promise((resolve) => setTimeout(resolve, 3000));
+    const response = await fetch("http://localhost:3001/clothes")
+    if (!response.ok) {
+
+      return {
+        notFound: true
+      }
+
+    }
+    const clothesData = await response.json();
+    return {
+      props: {
+        clothesData
+      }
+    }
+  } catch (e) {
+    console.log(e);
+
+    return {
+      notFound: true
+    }
+  }
+}
 
 export default HomePage;

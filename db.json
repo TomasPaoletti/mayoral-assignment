@@ -2,54 +2,54 @@
     "clothes": [
         {
             "id": 1,
-            "name": "Polo con estampado de algodón sostenible para chico",
+            "name": "Polo amarillo para niño",
             "img": "/polo/polo_1.png",
-            "price": 25.99,
+            "price": 29.99,
             "discount": 21.99
         },
         {
             "id": 2,
-            "name": "Polo con estampado de algodón sostenible para niño",
+            "name": "Polo blanco con animales para niño",
             "img": "/polo/polo_2.png",
-            "price": 25.99,
+            "price": 23.99,
             "discount": 13.99
         },
         {
             "id": 3,
-            "name": "Polo con motivo estampado de algodón sostenible para chico",
+            "name": "Polo azul a rayas para niño",
             "img": "/polo/polo_3.png",
-            "price": 23.99,
+            "price": 16.99,
             "discount": 12.99
         },
         {
             "id": 4,
             "name": "Polo con estampado de algodón para chico",
             "img": "/polo/polo_4.png",
-            "price": 23.99
+            "price": 24.99
         },
         {
             "id": 5,
             "name": "Polo con cuello mao de algodón para chico",
             "img": "/polo/polo_5.png",
-            "price": 25.99
+            "price": 32.99
         },
         {
             "id": 6,
-            "name": "Polo con estampado de algodón sostenible para niño",
+            "name": "Polo con estampado de palmeras para niño",
             "img": "/polo/polo_6.png",
-            "price": 25.99
+            "price": 22.99
         },
         {
             "id": 7,
-            "name": "Polo de algodón sostenible para chico",
+            "name": "Polo naranja de algodón sostenible para chico",
             "img": "/polo/polo_7.png",
-            "price": 25.99
+            "price": 17.99
         },
         {
             "id": 8,
-            "name": "Polo de manga corta en algodón sostenible para chico",
+            "name": "Polo azul marino de manga corta en algodón sostenible para chico",
             "img": "/polo/polo_8.png",
-            "price": 13.99,
+            "price": 28.99,
             "discount": 19.99
         }
     ]

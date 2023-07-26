@@ -22,7 +22,9 @@ const ClothesItem: React.FC<ClothesItemProps> = ({ clothes }) => {
                 <img className={style.item_image} src={clothes.img} alt={clothes.name} />
                 <h2 className={style.item_title}>{clothes.name}</h2>
                 <p className={priceStyle}>{clothes.price} €</p>
+                <div  className={style.container_discount}>
                 {clothes.discount && <p className={style.item_price_discount}>{clothes.discount} €</p>}
+                </div>
                 <div className={style.container_button}>
                 <button className={style.item_button}>Añadir</button>
                 </div>

@@ -1,27 +1,33 @@
 .container_filter {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
-.container_filter .input_filter{
-    margin-top: 16px;
-    width: 20%;
+.input_filter {
+    width: 40%;
+    border: 2px solid gray;
+    border-radius: 6px;
+    padding: 6px;
 }
 
-.order_price{
+.order_price {
     display: flex;
     margin-left: auto;
 }
 
 @media (max-width: 850px) {
-    .container_filter{
+    .container_filter {
+        height: 7rem;
         flex-direction: column-reverse;
         align-items: center;
     }
 
-    .order_price{
+    .input_filter {
+        margin: auto;
+    }
+
+    .order_price {
         margin-left: 0;
-        margin-top: 8px;
+        margin: auto;
     }
 }

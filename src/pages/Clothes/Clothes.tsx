@@ -17,6 +17,10 @@ interface ClothesProps {
 
 const Clothes: React.FC<ClothesProps> = ({ clothesData }) => {
 
+    if (!clothesData) {
+        return <div>Loading...</div>;
+      }
+
     return (
         <div data-testid='wrapper_clothes' className={style.wrapper_clothes}>
             {clothesData.map(item => <ClothesItem key={item.id} clothes={item} />)}

@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react'
-import HomePage from './index'
+import HomePage from '../pages/index'
 
 describe('Test componente index', () =>{
 

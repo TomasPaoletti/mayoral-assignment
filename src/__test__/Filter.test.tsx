@@ -1,5 +1,5 @@
 import {fireEvent, render, screen} from '@testing-library/react'
-import Filter from './Filter'
+import Filter from '../components/Filter/Filter'
 
 describe('Test componente filter', () => { 
 

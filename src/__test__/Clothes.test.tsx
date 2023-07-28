@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import Clothes from './Clothes'
+import Clothes from '../pages/Clothes/Clothes'
 
 describe('test componente Clothes', () => {
 

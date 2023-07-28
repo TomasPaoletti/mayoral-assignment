@@ -16,7 +16,7 @@ describe('test componente Clothes', () => {
             name: 'Jeans',
             img: 'img2.jpg',
             price: 50,
-            discount: 5
+            discount: 0
         }
     ];
 

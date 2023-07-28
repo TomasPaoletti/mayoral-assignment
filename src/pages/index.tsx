@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import { useState, ChangeEvent } from 'react'
 import Filter from "../components/Filter/Filter";
 import Clothes from "./Clothes/Clothes";
+import styles from './index.module.css'
 
 
 interface Clothe {
@@ -9,7 +10,7 @@ interface Clothe {
   name: string,
   img: string,
   price: number,
-  discount: boolean
+  discount: number
 }
 
 interface HomePageProps {
@@ -45,10 +46,10 @@ const HomePage: NextPage<HomePageProps> = ({ clothesData }) => {
   };
 
   return (
-    <>
+    <div className={styles.container_index}>
       <Filter onUp={handleUp} onDown={handleDown} onChange={inputChange} />
       <Clothes clothesData={itemsFilter.length !== 0 ? itemsFilter : items} />
-    </>
+    </div>
   )
 };
 

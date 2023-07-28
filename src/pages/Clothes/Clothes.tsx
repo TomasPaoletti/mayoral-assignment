@@ -1,5 +1,5 @@
 import React from 'react'
-import ClothesItem from 'components/ClothesItem/ClothesItem';
+import ClothesItem from '../../components/ClothesItem/ClothesItem';
 import style from './Clotes.module.css'
 
 
@@ -8,7 +8,7 @@ interface ClothesItem {
     name: string,
     img: string,
     price: number,
-    discount: boolean
+    discount: number
 }
 
 interface ClothesProps {
@@ -18,7 +18,7 @@ interface ClothesProps {
 const Clothes: React.FC<ClothesProps> = ({ clothesData }) => {
 
     return (
-        <div className={style.wrapper_clothes}>
+        <div data-testid='wrapper_clothes' className={style.wrapper_clothes}>
             {clothesData.map(item => <ClothesItem key={item.id} clothes={item} />)}
         </div>
     )
